@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5001;
 app.use(cors({
     origin: [
         "http://localhost:3000",
-        process.env.FRONTEND_URL 
+         https://cloudleran-frontend.vercel.app/
     ],
     credentials: true
 }));
