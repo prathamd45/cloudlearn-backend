@@ -11,12 +11,12 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 
 // ✅ CORS configuration for Local and Vercel production
-app.use(cors({
-    origin: [
-        "http://localhost:3000",
-         https://cloudleran-frontend.vercel.app/
-    ],
-    credentials: true
+app.use(require("cors")({
+  origin: [
+    "http://localhost:3000",
+    "https://cloudlearn-frontend.vercel.app" // ← your actual URL
+  ],
+  credentials: true
 }));
 
 app.use(express.json());
